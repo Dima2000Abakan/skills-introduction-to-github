@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата - Услуги по учебе</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f9e849, #f39c12);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), #000000; /* Градиентный фон */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .main-title {
+            font-size: 28px;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+        }
+        .logo { 
+            font-size: 54px; 
+            font-weight: bold; 
+            color: #f9e849; 
+            letter-spacing: 2px; 
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); 
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center; /* Центрируем навигацию */
+        }
+        nav a { 
+            margin: 0 20px; 
+            color: #000000; /* Чёрный цвет текста */
+            text-decoration: none; 
+            font-size: 20px; 
+            font-weight: bold; 
+            transition: color 0.3s ease;
+        }
+        nav a:hover { 
+            color: #f39c12; 
+            text-decoration: underline; 
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .service { 
+            margin: 20px 0; 
+            padding: 15px; 
+            background: white; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        footer { 
+            text-align: center; 
+            padding: 20px 0; 
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), #000000; /* Градиентный фон */
+            color: white; 
+            margin-top: 40px; /* Отступ сверху */
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+        }
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .social-icons { 
+            margin-top: 10px; 
+        }
+        .social-icons a { 
+            margin: 0 10px; 
+            color: white; 
+            text-decoration: none; 
+            transition: transform 0.3s;
+        }
+        .social-icons img { 
+            width: 24px; 
+            height: 24px; 
+            vertical-align: middle; 
+            transition: transform 0.3s; 
+        }
+        .social-icons img:hover {
+            transform: scale(1.2); /* Увеличение иконок при наведении */
+        }
+        .review {
+            display: flex;
+            align-items: center; /* Центрируем иконку и текст по вертикали */
+            margin: 10px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.5s;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .review img {
+            border-radius: 50%; /* Круглая форма иконки */
+            width: 50px; /* Размер иконки */
+            height: 50px;
+            margin-right: 10px; /* Отступ между иконкой и текстом */
+            object-fit: cover; /* Обеспечиваем правильное отображение изображения */
+        }
+        /* Медиазапросы для мобильных устройств */
+        @media (max-width: 600px) {
+            .main-title {
+                font-size: 22px;
+            }
+            .logo {
+                font-size: 40px;
+            }
+            nav a {
+                font-size: 18px;
+            }
+            .content {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="main-title">Профессиональная помощь с учебой</div>
+    <div class="logo">Сдашь на раз</div>
+</header>
+
+<nav>
+    <a href="#">Оплата</a>
+    <a href="#">Услуги</a>
+    <a href="#">Отзывы</a>
+    <a href="#">Блог</a>
+    <a href="#">Контакты</a>
+    <a href="#">Заказать консультацию</a>
+</nav>
+
+<div class="content">
+    <section>
+        <h2>Наши услуги</h2>
+        <div class="service visible">
+            <h3>Индивидуальные занятия</h3>
+            <p>Помощь с подготовкой к экзаменам и контрольным работам.</p>
+        </div>
+        <div class="service visible">
+            <h3>Групповые курсы</h3>
+            <p>Занятия в небольших группах для лучшего усвоения материала.</p>
+        </div>
+        <div class="service visible">
+            <h3>Онлайн-консультации</h3>
+            <p>Удобные занятия в формате видеозвонка.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Отзывы</h2>
+        <p style="margin-bottom: 10px;">Что говорят наши студенты:</p>
+        <div class="review">
+            <img src="https://img.freepik.com/free-photo/portrait-young-woman-with-natural-make-up_23-2149084942.jpg?t=st=1740753480~exp=1740757080~hmac=ad91b7eb57ef1a707b2d4ec63aa72268e159e03eedda8081dc6212663ebd2f9d&w=740" alt="Анна">
+            <blockquote>
+                <p>«Большое спасибо за помощь! Сдала экзамен на отлично, благодаря вашей поддержке!»</p>
+                <cite>- Анна, студентка</cite>
+            </blockquote>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Сдашь на раз </p>
+    <div class="social-icons">
+        <a href="https://wa.me/89991789876" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+        <a href="https://t.me/your-username" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

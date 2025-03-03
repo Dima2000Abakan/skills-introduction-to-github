@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Помощь Студентам</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f9e849, #f39c12); /* Градиентный фон */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: 1px solid #FFD700;
+            transition: transform 0.2s;
+        }
+        .container:hover {
+            transform: scale(1.02); /* Легкое увеличение при наведении */
+        }
+        h1 {
+            color: #FFD700;
+            font-family: 'Roboto', sans-serif; /* Используйте Google Fonts */
+            text-align: center;
+        }
+        p {
+            margin: 10px 0;
+            color: #555;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px; /* Уменьшено расстояние между полями */
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 6px; /* Уменьшено значение padding */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 12px; /* Уменьшен размер шрифта */
+            transition: border-color 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #FFD700; /* Желтая рамка при фокусе */
+        }
+        button {
+            width: 100%;
+            padding: 10px; /* Уменьшено значение padding */
+            background-color: #000000; /* Чёрный фон для кнопки */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px; /* Уменьшен размер шрифта */
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #f39c12; /* Цвет при наведении */
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+        .icon {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Заказать консультацию</h1>
+    <p>Заполните форму ниже</p>
+    <form>
+        <div class="form-group">
+            <label for="name"><img src="https://img.icons8.com/material-outlined/24/000000/user.png" class="icon" alt="Имя">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email"><img src="https://img.icons8.com/material-outlined/24/000000/email.png" class="icon" alt="Email">Ваш email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="service">Выберите услугу:</label>
+            <select id="service" name="service" required>
+                <option value="подготовка к экзамену">Подготовка к экзамену</option>
+                <option value="помощь с домашней работой">Помощь с домашней работой</option>
+                <option value="курсовая работа">Курсовая работа</option>
+                <option value="дипломная работа">Дипломная работа</option>
+                <option value="диссертация">Диссертация</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Ваше сообщение:</label>
+            <textarea id="message" name="message" rows="3" required></textarea> <!-- Уменьшено количество строк -->
+        </div>
+        <button type="submit">Отправить запрос</button>
+    </form>
+    <div class="contact-info">
+        <p>Контакты: ваш_email@example.com | Телефон: +7 (123) 456-79-80</p>
+    </div>
+</div>
+
+</body>
+</html>

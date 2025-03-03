@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Помощь Студентам</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f9e849, #f39c12); /* Градиентный фон */
+            color: #333; /* Черный текст */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000; /* Чёрный фон */
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            color: #FFD700; /* Желтый текст */
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #FFD700; /* Желтый текст */
+            font-weight: bold;
+            transition: color 0.3s; /* Плавное изменение цвета */
+        }
+        nav a:hover {
+            color: #f39c12; /* Цвет при наведении */
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #000000; /* Чёрный фон */
+            color: #FFD700; /* Желтый текст */
+        }
+        .description {
+            background-color: #fff; /* Белый фон */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            max-width: 600px; /* Ограничиваем ширину */
+            text-align: left; /* Выравниваем текст слева */
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Два столбца */
+            gap: 30px; /* Увеличенные отступы между элементами */
+            margin: 20px auto; /* Авто для центрирования */
+            max-width: 800px; /* Ограничиваем максимальную ширину */
+        }
+        .service {
+            background: #fff; /* Белый фон для услуг */
+            border: 1px solid #ddd;
+            border-radius: 12px; /* Закругленные углы */
+            padding: 15px; /* Увеличенный отступ */
+            text-align: center; /* Центрируем текст внутри блока */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 120px; /* Увеличенная ширина для услуг */
+            margin: 0 auto; /* Центрируем блоки */
+            transition: transform 0.3s, box-shadow 0.3s; /* Анимация при наведении */
+        }
+        .service:hover {
+            transform: translateY(-5px); /* Поднимаем блок при наведении */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Увеличиваем тень */
+        }
+        .price {
+            font-size: 1em; /* Размер шрифта для цены */
+            color: #e74c3c; /* Красный цвет для цены */
+            margin-top: 5px;
+        }
+        .about, .payment-process {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #FFD700; /* Желтая рамка */
+            border-radius: 8px;
+            background-color: #fff; /* Белый фон для блока */
+            text-align: left; /* Выравниваем текст слева */
+            max-width: 600px; /* Ограничиваем ширину блока */
+            margin: 20px auto; /* Центрируем блок */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .contact {
+            margin: 20px 0;
+        }
+        .contact img {
+            width: 30px; /* Размер иконки */
+            margin: 0 10px; /* Отступ между иконками */
+            vertical-align: middle; /* Выравнивание по вертикали */
+            transition: transform 0.3s; /* Плавная анимация для иконок */
+        }
+        .contact img:hover {
+            transform: scale(1.2); /* Увеличение иконки при наведении */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Услуги</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="consultation.html">Заказать консультацию</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="description">
+        <h2>Описание услуги</h2>
+        <p>Услуга заключается в том, что студент может сдать экзамен с помощью специалистов (бесплатно - платно).</p>
+    </div>
+
+    <div class="description">
+        <h2>Помощь в решении задач</h2>
+        <p>Мы предлагаем поддержку в различных областях, включая:</p>
+        <ul>
+            <li>Подготовка к экзаменам</li>
+            <li>Консультации по предметам</li>
+            <li>Решение домашних заданий</li>
+            <li>Написание курсовых и дипломных работ</li>
+            <li>Индивидуальные занятия и группы</li>
+        </ul>
+    </div>
+
+    <div class="services">
+        <div class="service">
+            <h3>Повышение успеваемости</h3>
+            <div class="price">500 ₽</div>
+        </div>
+        <div class="service">
+            <h3>Помощь с домашней работой</h3>
+            <div class="price">600 ₽</div>
+        </div>
+        <div class="service">
+            <h3>Подготовка к контрольной</h3>
+            <div class="price">900 ₽</div>
+        </div>
+        <div class="service">
+            <h3>Дипломная работа</h3>
+            <div class="price">10 000 ₽</div>
+        </div>
+        <div class="service">
+            <h3>Курсовая работа</h3>
+            <div class="price">2 000 ₽</div>
+        </div>
+        <div class="service">
+            <h3>Реферат</h3>
+            <div class="price">900 ₽</div>
+        </div>
+        <div class="service">
+            <h3>Отчет по практике</h3>
+            <div class="price">2 500 ₽</div>
+        </div>
+        <div class="service">
+            <h3>Диссертация</h3>
+            <div class="price">25 000 ₽</div>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>О себе</h2>
+        <p>Меня зовут Дмитрий, моя деятельность заключается в помощи студентам (сессии, предметы, поступление). Профессиональная помощь в практике 5 лет.</p>
+    </div>
+
+    <div class="payment-process">
+        <h2>Процесс оплаты</h2>
+        <p>Для начала работ требуется 35% предоплата. Окончательная оплата завершается при готовности работы.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Помощь Студентам</p>
+    <div class="contact">
+        <a href="https://t.me/ваш_никнейм" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/telegram-app.png" alt="Telegram">
+        </a>
+        <a href="https://wa.me/ваш_номер" target="_blank">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
